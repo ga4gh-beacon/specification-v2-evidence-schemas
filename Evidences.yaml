@@ -1,0 +1,15 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+"$id": https://beacon-project.io/schemas/Evidences/v2.a.2021-01-11
+title: Evidences
+description: >
+  The wrapper object for evidences associated with a squence variant.
+properties:
+  variantEvidences:
+    type: array
+    items:
+      "$ref": VariantEvidence.yaml#/properties
+    examples:
+      - - type: Clinvar variant
+          id: clinvar:163840
+        - type: OMIM variation data
+          id: OMIM:191170.0010
