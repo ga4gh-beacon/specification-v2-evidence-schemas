@@ -1,0 +1,19 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+"$id": https://beacon-project.io/schemas/VariantEvidence/v2.a.2021-01-11
+title: VariantEvidence
+description: >
+  Object to describe a *single* annotation of genomic or clinical evidence associated with an observed variant.
+properties:
+  id:
+    type: string
+    description: >
+      An internal variant evidence id.
+    examples:
+      - pgxvarev-kftzldsu
+  sourceId:
+    "$ref": OntologyTerm.yaml#/properties
+    description: >
+      An OntologyTerm `{id:__id__, label:__label__}` object identifying the source and id of the variant.
+    examples:
+      - type: Clinvar variant
+          id: clinvar:163840
