@@ -2,7 +2,7 @@
 "$id": https://beacon-project.io/schemas/Evidences/v2.a.2021-01-11
 title: Evidences
 description: >
-  The wrapper object for evidences associated with a squence variant.
+  The wrapper object for evidences associated with a sequence variant.
 properties:
   variantEvidences:
     type: array
